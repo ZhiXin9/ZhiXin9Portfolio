@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ZhiXin9Portfolio/static/css/main.c36231e8.css",
+    "main.js": "/ZhiXin9Portfolio/static/js/main.6f294943.js",
+    "static/media/space.jpg": "/ZhiXin9Portfolio/static/media/space.4f5a347198b6301816ca.jpg",
+    "static/media/logo.png": "/ZhiXin9Portfolio/static/media/logo.24abdb163446d051ac53.png",
+    "index.html": "/ZhiXin9Portfolio/index.html",
+    "main.c36231e8.css.map": "/ZhiXin9Portfolio/static/css/main.c36231e8.css.map",
+    "main.6f294943.js.map": "/ZhiXin9Portfolio/static/js/main.6f294943.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c36231e8.css",
+    "static/js/main.6f294943.js"
+  ]
+}
