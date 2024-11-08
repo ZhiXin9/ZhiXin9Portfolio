@@ -1,38 +1,363 @@
-.App {
+/* General styles */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #111; /* Dark background for the navbar */
+  padding: 10px 0;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px; /* Limit the max width */
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Align items vertically */
+  padding: 0 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; 
+}
+
+.logo {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px; /* Adjusted font size for links */
+}
+
+.nav-links li a.active {
+  font-weight: bold; /* Make the active link bold */
+  color: #f0a500; /* Change the color of the active link */
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.social-icon img {
+  width: 40px; /* Size of social icons */
+  height: 40px; /* Ensure icons are square */
+  border-radius: 50%; /* Circular icons */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Banner section style */
+.banner {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
   color: white;
+  position: relative;
+  background-image: url('./assets/img/space.jpg'); /* Adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+
+.banner-content {
+  z-index: 10; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* About Section Styles */
+#about {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+#about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f0a500;
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+/* General Layout */
+.portfolio-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #121212;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Project Tabs Styling */
+.project-tabs {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-item {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.tab-item:hover {
+  color: #f0f0f0;
+  background-color: #444;
+}
+
+.tab-item.active {
+  font-weight: bold;
+  color: #ff5733; /* Active tab color */
+  background-color: #333;
+}
+
+/* Right Column (Project Card) */
+.custom-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.custom-card img {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-body
+
+/* Contact Section */
+.contact-section {
+  background-color: #1a1a1a; /* Dark background */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #f0a500; /* Gold color for title */
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: 3rem;
+}
+
+.contact-info-item {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.contact-info-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.contact-info-item a {
+  color: #f0a500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item a:hover {
+  color: #fff;
+}
+
+.contact-info-item svg {
+  color: #f0a500;
+  transition: transform 0.3s ease;
+}
+
+.contact-info-item svg:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .contact-info-item {
+    margin-bottom: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact-form .form-group {
+    margin-bottom: 1rem;
   }
 }
+
+
+/* Footer Styles */
+.footer {
+  background-color: #111; /* Dark background to match the theme */
+  color: #fff; /* White text */
+  padding: 20px 0; /* Add vertical padding */
+  text-align: center; /* Center the text */
+  font-size: 1rem; /* Adjust font size */
+  position: relative; /* Make sure the footer stays at the bottom */
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px; /* Add some space from other content */
+}
+
+/* Hover effect on footer text */
+.footer p {
+  transition: color 0.3s ease;
+}
+
+.footer p:hover {
+  color: #f0a500; /* Add a color transition effect when hovering */
+}
+
+/* Project Page Styles */
+.project-page {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.project-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-page .project-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-page .project-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.project-page .project-image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-page .project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-page .project-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.project-page .project-description p {
+  margin-bottom: 20px;
+}
+
+.project-page .go-back-button {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.project-page .go-back-button a {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-page .go-back-button a:hover {
+  background-color: #0056b3;
+}
+
+/* Add to App.css or your component-specific CSS file */
