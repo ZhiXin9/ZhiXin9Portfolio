@@ -4,24 +4,25 @@ const projects = [
   {
     title: "VR Escape Room",
     description: "Using Unity to create a virtual escape room",
-    img: "/images/EscapeRoom.png",
+    img: `${process.env.PUBLIC_URL}/images/EscapeRoom.png`,
   },
   {
-    title: "Moile App Quiz",
+    title: "Mobile App Quiz",
     description: "Using WebStorm and Android studio to create a Mobile App Quiz",
-    img: "/images/MobileAppQuiz.jpg",  
+    img: `${process.env.PUBLIC_URL}/images/MobileAppQuiz.jpg`,
   },
   {
     title: "Portfolio Design",
-    description: "Using Adobe Illustrator to design namecard, stickers and portfolio website",
-    img: "/images/PortfolioDesign.jpg", 
+    description: "Using Adobe Illustrator to design namecard, stickers, and portfolio website",
+    img: `${process.env.PUBLIC_URL}/images/PortfolioDesign.jpg`,
   },
   {
     title: "Avatars Design",
     description: "Using AI generative tools and Adobe Illustrator to design Avatars and styles",
-    img: "/images/Avatars.jpg",
+    img: `${process.env.PUBLIC_URL}/images/Avatars.jpg`,
   }
 ];
+
 
 const Portfolio = () => {
   const [currentProject, setCurrentProject] = useState(0);
