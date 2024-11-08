@@ -2,7 +2,7 @@
   "name": "portfolio-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zhixin9.github.io",
+  "homepage": "https://zhixin9.github.io/ZhiXin9Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
