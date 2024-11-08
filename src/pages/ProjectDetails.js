@@ -6,11 +6,12 @@ const ProjectDetails = () => {
   const { id } = useParams();
   
   const projects = [
-    { id: 1, title: 'VR Escape Room', category: 'Virtual Reality (VR) Development', description: 'Using Unity to create a virtual escape room', image: '/images/EscapeRoom.png' },
-    { id: 2, title: 'Mobile App Quiz', category: 'Mobile App Development', description: 'Using WebStorm and Android Studio to create a Mobile App Quiz', image: '/images/MobileAppQuiz.jpg' },
-    { id: 3, title: 'Portfolio Design', category: 'Graphic Design', description: 'Using Adobe Illustrator to design namecards, stickers, and a portfolio website', image: '/images/PortfolioDesign.jpg' },
-    { id: 4, title: 'Avatars Design', category: 'Graphic Design', description: 'Using AI generative tools and Adobe Illustrator to design Avatars and styles', image: '/images/Avatars.jpg' },
+    { id: 1, title: 'VR Escape Room', category: 'Virtual Reality (VR) Development', description: 'Using Unity to create a virtual escape room', image: `${process.env.PUBLIC_URL}/images/EscapeRoom.png` },
+    { id: 2, title: 'Mobile App Quiz', category: 'Mobile App Development', description: 'Using WebStorm and Android Studio to create a Mobile App Quiz', image: `${process.env.PUBLIC_URL}/images/MobileAppQuiz.jpg` },
+    { id: 3, title: 'Portfolio Design', category: 'Graphic Design', description: 'Using Adobe Illustrator to design namecards, stickers, and a portfolio website', image: `${process.env.PUBLIC_URL}/images/PortfolioDesign.jpg` },
+    { id: 4, title: 'Avatars Design', category: 'Graphic Design', description: 'Using AI generative tools and Adobe Illustrator to design Avatars and styles', image: `${process.env.PUBLIC_URL}/images/Avatars.jpg` },
   ];
+  
 
   const project = projects.find(p => p.id === parseInt(id));
 

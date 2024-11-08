@@ -5,11 +5,12 @@ import './AllProjects.css';
 const AllProjects = () => {
   
   const projects = [
-    { id: 1, title: 'VR Escape Room', description: 'Using Unity to create a virtual escape room', image: '/images/EscapeRoom.png' },
-    { id: 2, title: 'Mobile App Quiz', description: 'Using WebStorm and Android studio to create a Mobile App Quiz', image: '/images/MobileAppQuiz.jpg' },
-    { id: 3, title: 'Portfolio Design', description: 'Using Adobe Illustrator to design namecard, stickers and portfolio website', image: '/images/PortfolioDesign.jpg' },
-    { id: 4, title: 'Avatars Design', description: 'Using AI generative tools and Adobe Illustrator to design Avatars and styles', image: '/images/Avatars.jpg' },
+    { id: 1, title: 'VR Escape Room', description: 'Using Unity to create a virtual escape room', image: `${process.env.PUBLIC_URL}/images/EscapeRoom.png` },
+    { id: 2, title: 'Mobile App Quiz', description: 'Using WebStorm and Android studio to create a Mobile App Quiz', image: `${process.env.PUBLIC_URL}/images/MobileAppQuiz.jpg` },
+    { id: 3, title: 'Portfolio Design', description: 'Using Adobe Illustrator to design namecard, stickers and portfolio website', image: `${process.env.PUBLIC_URL}/images/PortfolioDesign.jpg` },
+    { id: 4, title: 'Avatars Design', description: 'Using AI generative tools and Adobe Illustrator to design Avatars and styles', image: `${process.env.PUBLIC_URL}/images/Avatars.jpg` },
   ];
+  
 
   return (
     <div className="all-projects-container">
